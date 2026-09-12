@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEGATECH SARL — Great Future Building</title>
+<meta name="description" content="MEGATECH SARL — Ingénierie globale, BTP, maintenance industrielle, logistique et fourniture d'équipements en RDC.">
+<style>
+:root{--red:#c9232b;--red2:#a81720;--dark:#101317;--dark2:#181c21;--gray:#f3f4f5;--text:#17191c;--muted:#66707a;--gold:#c9a45b}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+.top{background:#0b0d10;color:#fff;font-size:13px;padding:9px 0;border-bottom:1px solid #3b3f44}
+.top .container{display:flex;gap:25px;justify-content:center;flex-wrap:wrap}.top span{opacity:.95}
+nav{position:sticky;top:0;z-index:20;background:#14171b;color:#fff;border-bottom:3px solid var(--red)}
+.navin{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;min-width:235px}.logoMark{width:58px;height:58px;border-radius:9px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 1px rgba(255,255,255,.18) inset}.logoMark img{width:100%;height:100%;object-fit:cover;object-position:center 42%;display:block}
+.brand b{font-size:24px;letter-spacing:-.5px}.brand small{display:block;color:var(--gold);font-weight:700;letter-spacing:1.2px;font-size:10px}
+.links{display:flex;gap:26px;align-items:center;font-weight:700;font-size:14px}.links a:hover,.links a.active{color:#ff3d46}
+.cta{background:var(--red);color:#fff;padding:13px 20px;border-radius:5px;font-weight:800;display:inline-block}.cta:hover{background:#e12c35}
+.hero{min-height:560px;color:#fff;position:relative;display:flex;align-items:center;background:
+linear-gradient(90deg,rgba(0,0,0,.86) 0%,rgba(0,0,0,.68) 45%,rgba(0,0,0,.22) 100%),
+url('assets/realisation-05.jpg') center/cover no-repeat}
+.hero .container{padding:70px 0}.eyebrow{color:#ff3a43;font-weight:900;letter-spacing:2px;font-size:14px}.hero h1{font-size:clamp(38px,5vw,66px);line-height:1.02;max-width:760px;margin:13px 0}.hero h1 span{color:#ff3a43}.hero p{max-width:680px;font-size:18px;line-height:1.6;color:#e7e8e9}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.ghost{border:1px solid #fff;padding:13px 20px;border-radius:5px;font-weight:800}
+.stats{background:#111419;color:#fff}.statsin{display:grid;grid-template-columns:repeat(4,1fr)}.stat{padding:22px;border-right:1px solid #42464c}.stat:last-child{border:0}.stat strong{display:block;color:#fff;font-size:16px}.stat p{margin:5px 0 0;color:#c8cbd0;font-size:13px;line-height:1.4}
+section{padding:72px 0}.sectionhead{text-align:center;margin-bottom:38px}.sectionhead .eyebrow{color:var(--red)}.sectionhead h2{font-size:36px;margin:8px 0}.sectionhead p{color:var(--muted);max-width:700px;margin:auto;line-height:1.6}
+.services{background:#f6f7f8}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:17px}.card{background:#fff;border-radius:8px;overflow:hidden;border:1px solid #ddd;box-shadow:0 8px 22px rgba(0,0,0,.06);transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(0,0,0,.12)}.card img{width:100%;height:145px;object-fit:cover}.cardbody{padding:20px}.card h3{font-size:17px;margin:0 0 10px}.card p{font-size:13px;color:#646b72;line-height:1.5;min-height:58px}.more{color:var(--red);font-weight:800;font-size:12px}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}.aboutimg{width:100%;height:430px;object-fit:cover;border-radius:10px}.about h2{font-size:38px;margin:7px 0 18px}.about p{color:#626a72;line-height:1.7}.facts{margin-top:25px;border-left:4px solid var(--red);padding-left:18px}.facts b{display:block;margin-bottom:7px}.facts span{color:#66707a;font-size:14px}
+.projects{background:#111419;color:#fff}.projects .sectionhead p{color:#c4c8cc}.projectgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.project{position:relative;overflow:hidden;border-radius:7px;height:220px;border:1px solid #3b4046}.project img{width:100%;height:100%;object-fit:cover;transition:.3s}.project:hover img{transform:scale(1.06)}.project:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.88))}.project span{position:absolute;z-index:2;bottom:15px;left:15px;font-weight:800;font-size:14px}
+.hse{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}.hsebox{background:linear-gradient(135deg,#171a1e,#292e34);color:#fff;border-radius:10px;padding:38px}.hsebox h3{font-size:28px;margin-top:0}.hsebox li{margin:13px 0;color:#d9dde0}.values{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.value{padding:20px;border:1px solid #ddd;border-left:4px solid var(--red);border-radius:6px}.value b{display:block;margin-bottom:6px}.value p{margin:0;color:#69717a;font-size:14px;line-height:1.45}
+.contact{background:#f4f5f6}.contactgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px}.contactbox{background:#171a1e;color:#fff;border-radius:8px;padding:35px}.contactbox h3{font-size:27px;margin-top:0}.contactbox p{color:#d3d6d9;line-height:1.7}.form{background:#fff;border-radius:8px;padding:30px;border:1px solid #ddd;display:grid;grid-template-columns:1fr 1fr;gap:14px}.form input,.form select,.form textarea{width:100%;padding:14px;border:1px solid #d7d9dc;border-radius:5px;font:inherit}.form textarea{grid-column:1/-1;min-height:120px;resize:vertical}.form button{border:0;cursor:pointer;justify-self:end}
+footer{background:#0c0f12;color:#fff;padding:30px 0}.footerin{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap;align-items:center}.footerin small{color:#adb2b7}
+@media(max-width:1000px){.links{gap:12px}.grid{grid-template-columns:repeat(2,1fr)}.statsin{grid-template-columns:repeat(2,1fr)}.about,.hse,.contactgrid{grid-template-columns:1fr}.projectgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.top{display:none}.navin{height:70px}.links{display:none}.brand{min-width:0}.brand b{font-size:20px}.hero{min-height:600px}.hero .container{padding:50px 0}.hero p{font-size:16px}.statsin{grid-template-columns:1fr 1fr}.stat{padding:16px}.grid,.projectgrid,.values{grid-template-columns:1fr}.form{grid-template-columns:1fr}.form textarea{grid-column:auto}.sectionhead h2,.about h2{font-size:30px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="container">
+<span>📍 Lubumbashi, Haut-Katanga, RDC</span><span>☎ +243 811 124 621</span><span>✉ megatechsarl01@gmail.com</span><span>🛡 Entreprise certifiée ARSP & RDC</span>
+</div></div>
+
+<nav><div class="container navin">
+<a class="brand" href="#accueil"><div class="logoMark"><img src="assets/logo-megatech-officiel.jpg" alt="Logo officiel MEGATECH SARL"></div><div><b>Megatech</b><small>GREAT FUTURE BUILDING</small></div></a>
+<div class="links"><a class="active" href="#accueil">ACCUEIL</a><a href="#apropos">À PROPOS</a><a href="#services">SERVICES</a><a href="#realisations">RÉALISATIONS</a><a href="#hse">HSE</a><a href="#contact">CONTACT</a></div>
+<a class="cta" href="#contact">DEMANDER UN DEVIS</a>
+</div></nav>
+
+<header class="hero" id="accueil"><div class="container">
+<div class="eyebrow">MEGATECH SARL • INGÉNIERIE GLOBALE</div>
+<h1>L’INGÉNIERIE GLOBALE<br>AU SERVICE DE LA PERFORMANCE <span>INDUSTRIELLE EN RDC</span></h1>
+<p>Spécialiste en BTP & Construction, Maintenance Industrielle, Logistique & Fourniture d’équipements pour les secteurs minier, industriel et civil.</p>
+<div class="actions"><a class="cta" href="#services">DÉCOUVRIR NOS SERVICES</a><a class="ghost" href="#contact">TÉLÉCHARGER LE PROFIL PDF</a></div>
+</div></header>
+
+<div class="stats"><div class="container statsin">
+<div class="stat"><strong>100% CONFORME</strong><p>ARSP, RCCM, NIF, IDNAT</p></div>
+<div class="stat"><strong>EXPERTISE COMPLÈTE</strong><p>BTP, MRO, VRD & Logistique</p></div>
+<div class="stat"><strong>ZONE D’INTERVENTION</strong><p>Haut-Katanga, Lualaba, Kinshasa, Kongo Central, Kasaï</p></div>
+<div class="stat"><strong>ENGAGEMENT HSE</strong><p>Normes de sécurité strictes sur chantier</p></div>
+</div></div>
+
+<section id="apropos"><div class="container about">
+<div><div class="eyebrow">À PROPOS DE MEGATECH SARL</div><h2>Construire aujourd’hui les solutions de demain.</h2>
+<p>MEGATECH SARL est une entreprise de droit congolais basée à Lubumbashi. Nous accompagnons les entreprises minières, industrielles et institutionnelles dans la réalisation de leurs projets d’infrastructure et le maintien de leurs opérations.</p>
+<p>Notre approche repose sur trois principes : comprendre les besoins du client, mobiliser les ressources adaptées et garantir une exécution conforme aux exigences de qualité, sécurité et délais.</p>
+<div class="facts"><b>RCCM : CD/LSH/RCCM/26-B-00057</b><span>NIF : A26143728 • IDNAT : 05-B9502-N1433Y • ARSP : 4519957611</span></div></div>
+<img class="aboutimg" src="assets/realisation-03.jpg" alt="Réalisation MEGATECH">
+</div></section>
+
+<section class="services" id="services"><div class="container">
+<div class="sectionhead"><div class="eyebrow">NOS DOMAINES D’EXPERTISE</div><h2>Des compétences réunies sous un même partenaire</h2><p>Une offre intégrée pour répondre aux besoins de construction, maintenance, ingénierie, logistique et fourniture.</p></div>
+<div class="grid">
+<div class="card"><img src="assets/realisation-05.jpg"><div class="cardbody"><h3>🏗️ BTP & Construction</h3><p>Bâtiments, VRD, terrassement, voiries, ouvrages d’art et finition.</p><a class="more" href="#contact">EN SAVOIR PLUS →</a></div></div>
+<div class="card"><img src="assets/realisation-06.jpg"><div class="cardbody"><h3>⚙️ Maintenance industrielle & MRO</h3><p>Mécanique, chaudronnerie, soudure spécialisée et électricité industrielle.</p><a class="more" href="#contact">EN SAVOIR PLUS →</a></div></div>
+<div class="card"><img src="assets/realisation-07.jpg"><div class="cardbody"><h3>🚚 Logistique & Transports</h3><p>Fret, transport, location d’engins, gestion de flotte et support terrain.</p><a class="more" href="#contact">EN SAVOIR PLUS →</a></div></div>
+<div class="card"><img src="assets/realisation-08.jpg"><div class="cardbody"><h3>📦 Fourniture & Équipements</h3><p>Matériaux de construction, quincaillerie industrielle et fournitures techniques.</p><a class="more" href="#contact">EN SAVOIR PLUS →</a></div></div>
+<div class="card"><img src="assets/realisation-09.jpg"><div class="cardbody"><h3>📐 Ingénierie globale</h3><p>Études techniques, conception, suivi de projets et solutions sur mesure.</p><a class="more" href="#contact">EN SAVOIR PLUS →</a></div></div>
+</div></div></section>
+
+<section class="projects" id="realisations"><div class="container">
+<div class="sectionhead"><div class="eyebrow">NOS RÉALISATIONS</div><h2>Des projets concrets, réalisés avec exigence</h2><p>Découvrez quelques réalisations et étapes de chantier illustrant notre savoir-faire en construction et ouvrages.</p></div>
+<div class="projectgrid">
+<div class="project"><img src="assets/realisation-01.jpg"><span>Ferraillage — dalle béton armé</span></div>
+<div class="project"><img src="assets/realisation-02.jpg"><span>Suivi de chantier — structure béton</span></div>
+<div class="project"><img src="assets/realisation-03.jpg"><span>Résidence moderne — construction</span></div>
+<div class="project"><img src="assets/realisation-04.jpg"><span>Ouvrage — coffrage & ferraillage</span></div>
+<div class="project"><img src="assets/realisation-06.jpg"><span>Structure métallique</span></div>
+<div class="project"><img src="assets/realisation-05.jpg"><span>Construction & gros œuvre</span></div>
+</div></div></section>
+
+<section id="hse"><div class="container hse">
+<div class="hsebox"><div class="eyebrow">HSE</div><h3>La sécurité et la qualité au cœur de chaque intervention.</h3><ul><li>Prévention des accidents et incidents</li><li>Port et contrôle des EPI</li><li>Protection de l’environnement</li><li>Respect des exigences clients et du chantier</li></ul></div>
+<div><div class="eyebrow">NOS VALEURS</div><h2>Une culture d’entreprise fondée sur l’excellence</h2><div class="values">
+<div class="value"><b>INTÉGRITÉ</b><p>Transparence, honnêteté et responsabilité.</p></div>
+<div class="value"><b>QUALITÉ</b><p>Recherche permanente de l’excellence.</p></div>
+<div class="value"><b>SÉCURITÉ</b><p>Priorité absolue sur site.</p></div>
+<div class="value"><b>PONCTUALITÉ</b><p>Respect des jalons et des engagements.</p></div>
+<div class="value"><b>SATISFACTION CLIENT</b><p>Le partenariat au cœur de nos actions.</p></div>
+<div class="value"><b>RÉACTIVITÉ</b><p>Mobilisation rapide des ressources adaptées.</p></div>
+</div></div></div></section>
+
+<section class="contact" id="contact"><div class="container">
+<div class="sectionhead"><div class="eyebrow">CONTACT</div><h2>Parlons de votre prochain projet</h2><p>Envoyez-nous votre besoin et notre équipe pourra vous répondre avec une proposition adaptée.</p></div>
+<div class="contactgrid"><div class="contactbox"><h3>Demande de devis rapide</h3><p>MEGATECH SARL<br>Lubumbashi, Haut-Katanga, RDC</p><p>☎ +243 811 124 621<br>✉ megatechsarl01@gmail.com</p><p>Services : BTP • Maintenance • Logistique • Fourniture • Ingénierie</p></div>
+<form class="form" onsubmit="event.preventDefault(); alert('Merci. Votre demande de devis est prête à être envoyée.');">
+<input placeholder="Nom complet / Entreprise" required><input type="email" placeholder="Email" required>
+<input placeholder="Téléphone"><select><option>Type de service requis</option><option>BTP & Construction</option><option>Maintenance industrielle</option><option>Logistique & Transport</option><option>Fourniture & Équipements</option><option>Ingénierie globale</option></select>
+<textarea placeholder="Message / Cahier des charges"></textarea><button class="cta" type="submit">ENVOYER LA DEMANDE</button>
+</form></div></div></section>
+
+<footer><div class="container footerin"><div class="brand"><div class="logoMark"><img src="assets/logo-megatech-officiel.jpg" alt="Logo officiel MEGATECH SARL"></div><div><b>Megatech</b><small>GREAT FUTURE BUILDING</small></div></div><small>© 2026 MEGATECH SARL — Tous droits réservés.</small><small>Lubumbashi • +243 811 124 621 • megatechsarl01@gmail.com</small></div></footer>
+</body>
+</html>
